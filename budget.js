@@ -152,7 +152,7 @@ function renderBudget(){
     const area=
 
     document.getElementById(
-        "budget-area"
+        "budget-list"
     );
 
 

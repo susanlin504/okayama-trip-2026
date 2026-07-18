@@ -1,0 +1,378 @@
+/* =========================
+   岡山瀨戶內慢旅
+   Japanese Travel Notebook Style
+========================= */
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    padding-bottom: 70px;
+
+    font-family:
+
+    "Noto Sans TC",
+    "Yu Gothic",
+    sans-serif;
+
+    background:#faf6ee;
+
+    color:#4b4036;
+
+}
+
+
+
+/* 首頁封面 */
+
+.hero {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #f8d9c8,
+        #fff3df
+    );
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    border-bottom-left-radius:30px;
+
+    border-bottom-right-radius:30px;
+
+}
+
+
+
+.hero h1 {
+
+    margin:0;
+
+    font-size:30px;
+
+    color:#a45d45;
+
+}
+
+
+.hero p {
+
+    margin:8px 0;
+
+    font-size:15px;
+
+}
+
+
+
+/* 卡片 */
+
+.card {
+
+    background:white;
+
+    margin:18px 15px;
+
+    padding:20px;
+
+    border-radius:22px;
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+
+.card h2 {
+
+    margin-top:0;
+
+    color:#8b6248;
+
+    font-size:22px;
+
+}
+
+
+
+/* 行程 */
+
+.day {
+
+    background:#fffaf3;
+
+    border-left:
+
+    5px solid #e8b07b;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-radius:12px;
+
+}
+
+
+.day h3 {
+
+    margin-top:0;
+
+    color:#9b6848;
+
+}
+
+
+
+.day p {
+
+    line-height:1.8;
+
+}
+
+
+
+/* 資訊框 */
+
+.info {
+
+    background:#fff6e8;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border-radius:12px;
+
+}
+
+
+
+/* 按鈕 */
+
+
+button {
+
+    border:none;
+
+    background:#c98562;
+
+    color:white;
+
+    padding:
+
+    10px 18px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+}
+
+
+
+button:hover {
+
+    opacity:0.85;
+
+}
+
+
+
+/* 連結 */
+
+a {
+
+    color:#668b6b;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+/* 地圖區 */
+
+#map-area {
+
+    height:250px;
+
+    background:#eee;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#777;
+
+}
+
+
+
+/* 預算 */
+
+#budget-area {
+
+    background:#fff8ee;
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+
+
+/* 行李 */
+
+label {
+
+    line-height:2.2;
+
+    font-size:16px;
+
+}
+
+
+
+/* 底部導航 */
+
+.bottom-nav {
+
+
+    position:fixed;
+
+
+    bottom:0;
+
+
+    left:0;
+
+
+    right:0;
+
+
+    height:65px;
+
+
+    background:white;
+
+
+    display:flex;
+
+
+    justify-content:space-around;
+
+
+    align-items:center;
+
+
+    border-top:
+
+    1px solid #ddd;
+
+
+    z-index:100;
+
+
+}
+
+
+
+.bottom-nav a {
+
+
+    font-size:25px;
+
+
+}
+
+
+
+/* 手機最佳化 */
+
+
+@media(max-width:600px){
+
+
+    .hero h1{
+
+        font-size:25px;
+
+    }
+
+
+    .card{
+
+        margin:12px;
+
+        padding:16px;
+
+    }
+
+
+    .card h2{
+
+        font-size:20px;
+
+    }
+
+
+}
+
+
+/* 小動畫 */
+
+
+.card {
+
+
+    animation:
+
+    fadeIn 0.5s ease;
+
+
+}
+
+
+
+@keyframes fadeIn {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

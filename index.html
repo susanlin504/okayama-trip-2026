@@ -111,60 +111,64 @@ target="_blank">
 
 <h2>💰 預算</h2>
 
-<p>
-機票、住宿、交通、餐費、購物
-</p>
-
-<div id="budget-area">
 
 <input 
 id="budget-item"
-placeholder="例如：午餐">
+placeholder="例如：尾道午餐">
+
+
+<br><br>
 
 
 <input
 id="budget-money"
 type="number"
-placeholder="金額">
+placeholder="例如：1500">
+
+
+<br><br>
 
 
 <select id="budget-type">
 
-<option value="food">
+<option>
 餐飲
 </option>
 
-<option value="shopping">
-購物
-</option>
-
-<option value="transport">
+<option>
 交通
 </option>
 
-<option value="hotel">
+<option>
+購物
+</option>
+
+<option>
 住宿
 </option>
 
 </select>
 
 
-<button onclick="saveNewExpense()">
+<br><br>
+
+
+<button onclick="addExpense()">
 
 新增花費
 
 </button>
 
 
-<hr>
+<h3 id="budget-total">
+
+</h3>
 
 
 <div id="budget-list">
 
 </div>
 
-
-</div>
 
 </section>
 

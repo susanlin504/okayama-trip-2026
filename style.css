@@ -210,11 +210,13 @@ a {
 
 #map-area {
 
-    height:250px;
+    height:400px;
 
     background:#eee;
 
     border-radius:15px;
+   
+    overflow:hidden;
 
     display:flex;
 

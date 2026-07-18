@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>🍑 岡山瀨戶內慢旅</title>
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#c98562">
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
@@ -226,7 +229,19 @@ placeholder="金額">
 <script src="checklist.js"></script>
 
 <script src="app.js"></script>
+<script>
 
+if(
+'serviceWorker' in navigator
+){
+
+navigator.serviceWorker.register(
+'service-worker.js'
+);
+
+}
+
+</script>
 </body>
 
 </html>
